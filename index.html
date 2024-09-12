@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamad Reza Falaki - Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
     <style>
         :root {
             --primary-color: #3498db;
@@ -69,6 +73,10 @@
         h2 {
             color: var(--secondary-color);
             margin-bottom: 1rem;
+        }
+
+        .section-icon {
+            margin-right: 10px;
         }
 
         .skills {
@@ -144,27 +152,34 @@
         }
     </style>
 </head>
+
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-adjust"></i>
+    </button>
 
     <header>
         <div class="container">
             <h1>Mohamad Reza Falaki</h1>
             <p>Back Stack Developer | 18 years old | Iran</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/mohammadrezafalaki/" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/mohammadrezafalaki/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
             </div>
         </div>
     </header>
 
     <main class="container">
         <section>
-            <h2>About Me</h2>
-            <p>I'm a passionate 18-year-old developer from Iran with expertise in both frontend and backend technologies. I love creating efficient and scalable web applications using modern tools and best practices.</p>
+            <h2><i class="fas fa-user section-icon"></i>About Me</h2>
+            <p>I'm a passionate 18-year-old developer from Iran with expertise in both frontend and backend
+                technologies. I love creating efficient and scalable web applications using modern tools and best
+                practices.</p>
         </section>
 
         <section>
-            <h2>Skills</h2>
+            <h2><i class="fas fa-code section-icon"></i>Skills</h2>
             <div class="skills">
                 <span class="skill">PHP</span>
                 <span class="skill">Laravel</span>
@@ -187,7 +202,7 @@
         </section>
 
         <section>
-            <h2>Projects</h2>
+            <h2><i class="fas fa-project-diagram section-icon"></i>Projects</h2>
             <div class="projects">
                 <div class="project">
                     <h3>Project 1</h3>
@@ -241,4 +256,5 @@
         document.head.appendChild(style);
     </script>
 </body>
+
 </html>
